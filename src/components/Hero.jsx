@@ -98,8 +98,10 @@ const Right = styled.div`
 `;
 
 const Img = styled.img`
-  width: 800px;
-  height: 600px;
+  max-width: 800px;
+  max-height: 600px;
+  width: auto;
+  height: auto;
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -110,8 +112,8 @@ const Img = styled.img`
   animation: animate 2s infinite ease alternate;
 
   @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   @keyframes animate {
@@ -130,7 +132,7 @@ const Hero = () => {
         <Left>
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
-            <Line src="./img/line.png" />
+            <Line src="/img/line.png" />
             <Subtitle>What We Do</Subtitle>
           </WhatWeDo>
           <Desc>
@@ -155,7 +157,7 @@ const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <Img src="./img/moon.png" />
+          <Img src="/img/moon.png" />
         </Right>
       </Container>
     </Section>
