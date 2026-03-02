@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import Map from "./Map";
 
+/* Contact section: form on the left, world map on the right (map hidden on small screens). */
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -73,13 +74,14 @@ const Right = styled.div`
   }
 `;
 
+/** Contact form (name, email, message) sent via EmailJS. Replace service_id, template_id, and public_key with your EmailJS values (or use env vars). ref attaches to the form for sendForm. */
 const Contact = () => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    /* EmailJS sends the form from the client; no backend required. Use VITE_* env vars in production. */
     emailjs
       .sendForm(
         "service_id",

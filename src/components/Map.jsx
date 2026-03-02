@@ -7,6 +7,7 @@ import {
   ZoomableGroup
 } from "react-simple-maps";
 
+/** World map via react-simple-maps. GeoJSON from public/features.json; annotations mark Paris and Warsaw. Projection and styling are configurable via props. */
 const Map = () => {
   return (
     <ComposableMap
@@ -30,6 +31,7 @@ const Map = () => {
           ))
         }
       </Geographies>
+      {/* Annotation coordinates are [longitude, latitude]; dx/dy offset the label. */}
       <Annotation
         subject={[2.3522, 48.8566]}
         dx={-90}

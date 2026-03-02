@@ -3,7 +3,7 @@ import { Line, Sphere } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
 
-// You can draw the shape in this way if do not want to import a ready-to-use 3D model.
+/* Procedural atom shape: ellipse curve points define orbits; three ellipses at 0°, 60°, -60° and a central sphere. No external 3D model. */
 const Shape = () => {
   const points = useMemo(
     () =>
@@ -36,6 +36,7 @@ const Shape = () => {
   );
 };
 
+/** Atom visualization: Shape (orbits + nucleus) plus post-processing Bloom for a glow effect. Used in the Development tab. */
 const Atom = () => {
   return (
     <>

@@ -1,6 +1,7 @@
 import React from "react";
 import { useGLTF } from "@react-three/drei";
 
+/** Shoe 3D model from public/shoe.gltf. Each mesh uses the file's geometry and materials; some override with meshStandardMaterial (e.g. purple color). castShadow/receiveShadow enable shadows when the scene has a shadow-casting light. */
 export default function Shoe({ color, ...props }) {
   const { nodes, materials } = useGLTF("/shoe.gltf");
   return (
@@ -68,4 +69,5 @@ export default function Shoe({ color, ...props }) {
   );
 }
 
+/* Preload the model so it's ready when the Product Design tab is shown. */
 useGLTF.preload("/shoe.gltf");

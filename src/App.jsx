@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Who from "./components/Who";
 import Works from "./components/Works";
 
+/* Main scroll container: full viewport height, vertical scroll-snap so each section snaps into view. */
 const Container = styled.div`
   height: 100vh;
   scroll-snap-type: y mandatory;
@@ -17,6 +18,7 @@ const Container = styled.div`
   }
 `;
 
+/** Root layout: four full-page sections in order (Hero → Who → Works → Contact). Single route, no router. */
 function App() {
   return (
     <Container>

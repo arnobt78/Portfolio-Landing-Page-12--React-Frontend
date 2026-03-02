@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
+/* Hero section: full viewport, scroll-snap aligned. Left column = copy + CTA, right = 3D canvas + overlay image. */
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -120,6 +121,7 @@ const Img = styled.img`
   }
 `;
 
+/** Hero: Navbar, headline, "What We Do" subtitle, description, Learn More button; right side has R3F Canvas (distorted sphere) and a static moon image overlay. Suspense lets 3D load without blocking the rest of the UI. */
 const Hero = () => {
   return (
     <Section>
@@ -129,14 +131,15 @@ const Hero = () => {
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>What we Do</Subtitle>
+            <Subtitle>What We Do</Subtitle>
           </WhatWeDo>
           <Desc>
-            we enjoy creating delightful, human-centered digital experiences.
+            We enjoy creating delightful, human-centered digital experiences.
           </Desc>
           <Button>Learn More</Button>
         </Left>
         <Right>
+          {/* React Three Fiber Canvas: OrbitControls (no zoom), lights, and a Sphere with MeshDistortMaterial for the animated blob. */}
           <Canvas>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />

@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import Atom from "./Atom";
 import styled from "styled-components";
 
+/* Floating description card overlay for the Development 3D view. */
 const Desc = styled.div`
   width: 200px;
   height: 70px;
@@ -23,6 +24,7 @@ const Desc = styled.div`
   }
 `;
 
+/** Development tab content: Atom (orbits + bloom) with auto-rotate and a short description overlay. */
 const Development = () => {
   return (
     <>

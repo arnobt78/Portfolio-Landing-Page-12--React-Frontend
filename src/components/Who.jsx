@@ -4,6 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
 
+/* Who section: left = 3D Cube canvas, right = copy and CTA. On mobile the 3D side is hidden. */
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -78,6 +79,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+/** "Who we Are" block: Cube component (render-to-texture text) with auto-rotating orbit; copy and "See our works" on the right. */
 const Who = () => {
   return (
     <Section>

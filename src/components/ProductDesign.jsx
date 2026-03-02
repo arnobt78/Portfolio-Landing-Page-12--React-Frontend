@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import Shoe from "./Shoe";
 import styled from "styled-components";
 
+/* Description overlay for the Product Design 3D view. */
 const Desc = styled.div`
   width: 200px;
   height: 70px;
@@ -23,6 +24,7 @@ const Desc = styled.div`
   }
 `;
 
+/** Product Design tab: Shoe 3D model (public/shoe.gltf) inside Drei Stage with environment lighting. */
 const ProductDesign = () => {
   return (
     <>

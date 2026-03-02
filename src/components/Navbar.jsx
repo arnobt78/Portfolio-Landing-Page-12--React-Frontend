@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+/* Navbar layout: centered max-width container, logo + nav links on left, search icon + CTA on right. */
 const Section = styled.div`
   display: flex;
   justify-content: center;
@@ -68,6 +69,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+/** Top navigation: logo, nav items (Home, Studio, Works, Contact), search icon, and "Hire Now" button. Links are non-functional by default; wire to scroll or router as needed. */
 const Navbar = () => {
   return (
     <Section>

@@ -4,6 +4,7 @@ import Development from "./Development";
 import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesign";
 
+/* Category list for the Works section. Only Web Design, Development, and Product Design have 3D views; others fall back to ProductDesign. */
 const data = [
   "Web Design",
   "Development",
@@ -66,6 +67,7 @@ const ListItem = styled.li`
     -webkit-text-stroke: 0px;
   }
 
+  /* Pseudo-element shows the same text in pink; width animates on hover for a fill effect. */
   ::after {
     content: "${(props) => props.text}";
     position: absolute;
@@ -94,6 +96,7 @@ const Right = styled.div`
   flex: 1;
 `;
 
+/** Works section: left = list of categories (hover fill effect); right = 3D view (WebDesign = Mac, Development = Atom, else ProductDesign = Shoe). */
 const Works = () => {
   const [work, setWork] = useState("Web Design");
   return (
@@ -109,6 +112,7 @@ const Works = () => {
           </List>
         </Left>
         <Right>
+          {/* Only three categories have dedicated 3D components; Illustration and Social Media show ProductDesign. */}
           {work === "Web Design" ? (
             <WebDesign />
           ) : work === "Development" ? (

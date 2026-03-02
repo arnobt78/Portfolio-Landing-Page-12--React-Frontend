@@ -4,6 +4,7 @@ import React, { Suspense } from "react";
 import styled from "styled-components";
 import Mac from "./Mac";
 
+/* Description overlay for the Web Design 3D view. */
 const Desc = styled.div`
   width: 200px;
   height: 70px;
@@ -23,6 +24,7 @@ const Desc = styled.div`
   }
 `;
 
+/** Web Design tab: Mac 3D model inside Drei Stage (environment lighting). Requires public/mac-draco.glb. */
 const WebDesign = () => {
   return (
     <>

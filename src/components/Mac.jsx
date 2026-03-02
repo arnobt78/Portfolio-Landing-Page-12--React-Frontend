@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { a as three } from "@react-spring/three";
 
+/** Mac 3D model loaded from public/mac-draco.glb. useGLTF returns nodes (meshes) and materials; each mesh uses the GLB's geometry and material. Add mac-draco.glb to public/ for this to load. */
 export default function Mac({ ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/mac-draco.glb");
