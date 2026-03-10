@@ -10,7 +10,7 @@ A single-page portfolio showcase built with React, Vite, and Three.js. It demons
 
 - **Live Demo:** [https://portfolio-ui-12.vercel.app/](https://portfolio-ui-12.vercel.app/)
 
----
+<img width="1898" height="928" alt="Screenshot 2026-03-10 at 11 45 24" src="https://github.com/user-attachments/assets/7a34c72f-a5da-416b-bf1d-b9cfa37cdd8f" /> <img width="1860" height="792" alt="Screenshot 2026-03-10 at 11 45 33" src="https://github.com/user-attachments/assets/a5a953b5-dc59-4a65-995e-b2699268fbb2" /> <img width="1853" height="874" alt="Screenshot 2026-03-10 at 11 45 55" src="https://github.com/user-attachments/assets/a9591257-ce71-4c7f-a274-ea4931c547e4" /> <img width="1886" height="920" alt="Screenshot 2026-03-10 at 11 46 11" src="https://github.com/user-attachments/assets/12b950ae-2ff5-4f55-b434-042288cc0f2d" />
 
 ## Table of Contents
 
