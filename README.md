@@ -1,4 +1,4 @@
-# Portfolio Landing Page 13 - React, Vite, Three.js Frontend Project
+# Portfolio Landing Page 13 - React, Vite, JavaScript, Three.js Frontend Project
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Vite](https://img.shields.io/badge/Vite-6.2-646CFF)](https://vitejs.dev/)
@@ -6,11 +6,14 @@
 [![Three.js](https://img.shields.io/badge/Three.js-0.168-green)](https://threejs.org/)
 [![styled-components](https://img.shields.io/badge/styled--components-5.3-DB7093)](https://styled-components.com/)
 
-A single-page portfolio showcase built with React, Vite, and Three.js. It demonstrates scroll-snap sections, 3D visuals with React Three Fiber, a contact form with EmailJS, and a world map with react-simple-maps. Use it as a template for learning modern front-end tooling or as a base for your own portfolio.
+A single-page portfolio showcase built with React, Vite, JavaScript, and Three.js. It demonstrates scroll-snap sections, 3D visuals with React Three Fiber, a contact form with EmailJS, and a world map with react-simple-maps. Use it as a template for learning modern front-end tooling or as a base for your own portfolio.
 
 - **Live Demo:** [https://portfolio-ui-12.vercel.app/](https://portfolio-ui-12.vercel.app/)
 
-<img width="1898" height="928" alt="Screenshot 2026-03-10 at 11 45 24" src="https://github.com/user-attachments/assets/7a34c72f-a5da-416b-bf1d-b9cfa37cdd8f" /> <img width="1860" height="792" alt="Screenshot 2026-03-10 at 11 45 33" src="https://github.com/user-attachments/assets/a5a953b5-dc59-4a65-995e-b2699268fbb2" /> <img width="1853" height="874" alt="Screenshot 2026-03-10 at 11 45 55" src="https://github.com/user-attachments/assets/a9591257-ce71-4c7f-a274-ea4931c547e4" /> <img width="1886" height="920" alt="Screenshot 2026-03-10 at 11 46 11" src="https://github.com/user-attachments/assets/12b950ae-2ff5-4f55-b434-042288cc0f2d" />
+![Screenshot 2026-03-10 at 11 45 24](https://github.com/user-attachments/assets/7a34c72f-a5da-416b-bf1d-b9cfa37cdd8f)
+![Screenshot 2026-03-10 at 11 45 33](https://github.com/user-attachments/assets/a5a953b5-dc59-4a65-995e-b2699268fbb2)
+![Screenshot 2026-03-10 at 11 45 55](https://github.com/user-attachments/assets/a9591257-ce71-4c7f-a274-ea4931c547e4)
+![Screenshot 2026-03-10 at 11 46 11](https://github.com/user-attachments/assets/12b950ae-2ff5-4f55-b434-042288cc0f2d)
 
 ## Table of Contents
 
@@ -33,7 +36,7 @@ A single-page portfolio showcase built with React, Vite, and Three.js. It demons
 
 ## Introduction
 
-This project is a **front-end-only** portfolio landing page. It has no backend; the contact form uses **EmailJS** to send emails from the browser. The app is a single route: one scrollable page with four main sections (Hero, Who, Works, Contact). All 3D content is rendered with **React Three Fiber** and **Three.js**; styling is done with **styled-components**. The goal is to provide a clear, educational codebase for React + Vite + 3D + forms.
+This project is a **front-end-only** portfolio landing page. It has no backend; the contact form uses **EmailJS** to send emails from the browser. The app is a single route: one scrollable page with four main sections (Hero, Who, Works, Contact). All 3D content is rendered with **React Three Fiber** and **Three.js**; styling is done with **styled-components**. The goal is to provide a clear, educational codebase for React + Vite + JavaScript + 3D + forms.
 
 ---
 
